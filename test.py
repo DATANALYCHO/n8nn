@@ -9,7 +9,7 @@ st.set_page_config(page_title="n8n Webhook Chat", page_icon="💬")
 st.sidebar.header("설정")
 webhook_url = st.sidebar.text_input(
     "Webhook URL",
-    value="http://localhost:5678/webhook/9406d6e4-77ef-4d8d-9f9b-117cacf0f45e",
+    value="https://6311df04c601.ngrok-free.app/webhook/9406d6e4-77ef-4d8d-9f9b-117cacf0f45e",
 )
 
 if "session_id" not in st.session_state:
@@ -84,3 +84,4 @@ if user_input:
 
         placeholder.markdown(content)
         st.session_state.messages.append({"role": "assistant", "content": content})
+
